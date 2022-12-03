@@ -92,7 +92,7 @@ function Dashboard() {
           <Col md='4'>
             <Card>
               <Card.Header>
-                <Card.Title as='h4'>Email Statistics</Card.Title>
+                <Card.Title as='h4'>Arbre à abattre</Card.Title>
                 <p className='card-category'>Last Campaign Performance</p>
               </Card.Header>
               <Card.Body>
