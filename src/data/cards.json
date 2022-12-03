@@ -1,0 +1,30 @@
+[
+  {
+    "updated": "Update Now",
+    "title": "Number",
+    "bigIcon": "nc-icon nc-chart text-warning",
+    "smallIcon": "fas fa-redo mr-1",
+    "stat": "150"
+  },
+  {
+    "updated": "Last day",
+    "title": "Revenue",
+    "bigIcon": "nc-icon nc-light-3 text-success",
+    "smallIcon": "far fa-calendar-alt mr-1",
+    "stat": "$ 1,345"
+  },
+  {
+    "updated": "In the last hour",
+    "title": "Errors",
+    "bigIcon": "nc-icon nc-vector text-danger",
+    "smallIcon": "fas fa-clock-o mr-1",
+    "stat": "23"
+  },
+  {
+    "updated": "Update now",
+    "title": "Followers",
+    "bigIcon": "nc-icon nc-favourite-28 text-primary",
+    "smallIcon": "fas fa-redo mr-1",
+    "stat": "+45K"
+  }
+]
