@@ -35,7 +35,7 @@ function genreByNumber(data) {
   return {map,totalGnere:map.size,treesNumber:data.records.length};
 }
 
-module.exports = {
+export {
   normalizedData,
   genreByNumber
 };
