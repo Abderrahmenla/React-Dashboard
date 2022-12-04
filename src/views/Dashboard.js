@@ -5,9 +5,12 @@ import StatCard from '../components/stat-card';
 // react-bootstrap components
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import { DataContext } from 'contexts';
+import { genreByNumber } from '../utils';
 
 function Dashboard() {
   const data = useContext(DataContext);
+  const genre = genreByNumber(data[0].records);
+  console.log (Array.from(genre.map.keys()) )
   return (
     <>
       <Container fluid>
@@ -93,7 +96,7 @@ function Dashboard() {
             <Card>
               <Card.Header>
                 <Card.Title as='h4'>Arbre à abattre</Card.Title>
-                <p className='card-category'>Last Campaign Performance</p>
+                <p className='card-category'>Nombre d&apos;arbres à abattre par genre</p>
               </Card.Header>
               <Card.Body>
                 <div

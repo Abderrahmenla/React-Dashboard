@@ -5,13 +5,13 @@ const initialContext = {};
 const DataContext = createContext(initialContext);
 function DataProvider({ children }) {
   const [data, setData] = useState(initialContext);
-  console.log(process.env.REACT_APP_KEY);
   const getData = useApi(getDataRequest);
   useEffect(() => {
     let isApiSubscribed = true;
     if (isApiSubscribed) {
       // fetch data from api
       getData.request();
+      console.log('this is from the react conttext',getData.requestedData)
       setData(getData.requestedData);
     }
     return () => (isApiSubscribed = false);
