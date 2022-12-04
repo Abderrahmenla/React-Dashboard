@@ -11,7 +11,6 @@ function DataProvider({ children }) {
     if (isApiSubscribed) {
       // fetch data from api
       getData.request();
-      console.log('this is from the react conttext',getData.requestedData)
       setData(getData.requestedData);
     }
     return () => (isApiSubscribed = false);

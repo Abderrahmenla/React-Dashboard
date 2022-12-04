@@ -8,9 +8,10 @@ import { DataContext } from 'contexts';
 import { genreByNumber } from '../utils';
 
 function Dashboard() {
+  // Get the fetched data 
   const data = useContext(DataContext);
-  const genre = genreByNumber(data[0].records);
-  console.log (Array.from(genre.map.keys()) )
+//   const genre = genreByNumber(data);
+//  console.log (Array.from(genre.map.keys()))
   return (
     <>
       <Container fluid>

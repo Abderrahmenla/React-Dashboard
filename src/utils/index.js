@@ -32,7 +32,7 @@ function genreByNumber(data) {
     }
     else map.set(item.fields.genrefutur, 1) 
   });
-  return {map,totalGnere:map.size,treesNumber:data.records.length};
+  return {map,totalGnere:map.size,treesNumber:data.length};
 }
 
 export {
